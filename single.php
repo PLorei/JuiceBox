@@ -10,7 +10,7 @@
 get_header(); ?>
 
 	<div class="row">
-		<main id="main" class="site-main col-md-8 col-sm-12 col-xs-12 <?php renard_sidebar_class(); ?>" role="main">
+		<main id="main" class="site-main col-md-12 col-sm-12 col-xs-12 <?php renard_sidebar_class(); ?>" role="main">
 
 		<?php while ( have_posts() ) : the_post(); ?>
 
@@ -22,7 +22,7 @@ get_header(); ?>
 
 		</main><!-- #main -->
 
-		<?php get_sidebar(); ?>
+		<?php #get_sidebar(); ?>
 
 	</div>
 

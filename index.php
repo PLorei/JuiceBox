@@ -17,6 +17,7 @@ get_header(); ?>
 	<div class="row">
 		<main id="main" class="site-main col-md-8 col-sm-12 col-xs-12 <?php renard_sidebar_class(); ?>" role="main">
 
+
 		<?php if ( have_posts() ) : ?>
 
 			<?php if ( is_home() && ! is_front_page() ) : ?>

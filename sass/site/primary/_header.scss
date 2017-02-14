@@ -5,7 +5,19 @@
 }
 
 .site-branding {
-	background: $color__secondary;
+	background: white;
+	/* border-bottom: 2px solid $color__link;*/
+}
+
+.fixed {
+	position: fixed;
+	width: 100%;
+	top: 0px;
+	opacity: 1;
+	z-index: 9;
+	-webkit-box-shadow: 0px 3px 25px 0px rgba(0,0,0,0.5);
+	-moz-box-shadow: 0px 3px 25px 0px rgba(0,0,0,0.5);
+	box-shadow: 0px 3px 25px 0px rgba(0,0,0,0.5);
 }
 
 .site-logo-wrap {
@@ -13,21 +25,24 @@
 	vertical-align: top;
 	padding: 10px 20px;
 	text-align: center;
-	background: rgba(0,0,0,.5);
 	@media ( max-width: 480px ) {
 		display: block;
 		margin: 0 -15px;
 	}
 }
 
+#header-wrap {
+	text-align: center;
+}
+
 .site-title {
 	@include font-size(3.125);
 	line-height: 1;
 	margin: 0;
-	font-family: 'Yesteryear', cursive;
+	font-family: $font__header;
 	font-weight: normal;
 	a {
-		color: $color__link;
+		color: #f9ac70;
 		text-decoration: none;
 	}
 }
@@ -38,8 +53,41 @@
 	color: rgba(255,255,255,.4);
 }
 
+.menu-toggle {
+	float: left;
+}
+
 .site-nav {
 	background: #fff;
+	padding-bottom: 0px;
+}
+
+.search-field {
+	width: 100%;
+}
+
+.show-search {
+	display: block;
+}
+
+.hide-search {
+	display: none;
+}
+
+.search-toggle {
+	margin-top: 20px;
+    display: block;
+    color: $color__link;
+    background-color: white;
+    box-shadow: none;
+    float: right;
+	outline: none !important;
+	@media (max-width: 600px) {
+		margin-top: 0px;
+	}
+	&:focus {
+		color: $color__link;
+	}
 }
 
 .follow-list {

@@ -54,7 +54,7 @@
 
 			a {
 				width: 200px;
-				@include font-size(1);
+				@include font-size(0.75);
 				line-height: 1.1;
 				text-transform: none;
 				padding: 10px 15px;
@@ -127,7 +127,7 @@
 					right: 4px;
 					top: 50%;
 					margin: -8px 0 0 0;
-					@include font-size(1);
+					@include font-size(0.75);
 					line-height: 1;
 				}
 			}
@@ -147,14 +147,14 @@
 		display: block;
 		text-decoration: none;
 		text-transform: uppercase;
-		@include font-size(1.125);
+		@include font-size(0.75);
 		line-height: 1;
 		padding: 31px 25px;
-		color: $color__text-main;
+		color: $color__link-alt;
 		position: relative;
 		@media ( max-width: 767px ) {
 			padding: 20px 15px;
-			@include font-size(1);
+			@include font-size(0.75);
 		}
 		@media screen and (max-width: 599px) {
 			padding: 10px 10px 10px 20px;
@@ -188,10 +188,11 @@
 }
 
 .menu-toggle {
+	outline: none;
 	background: none;
 	box-shadow: none;
 	color: $color__text-main;
-	@include font-size(1.125);
+	@include font-size(0.75);
 	padding: 10px 25px;
 	&:before {
 		content: "\f0c9";
@@ -251,7 +252,7 @@
 		line-height: 0;
 		.page-numbers {
 			display: inline-block;
-			@include font-size( 1.125 );
+			@include font-size( 0.75 );
 			line-height: 1.2;
 			padding: 3px 5px;
 			color: $color__text-main;

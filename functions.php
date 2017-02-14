@@ -176,6 +176,8 @@ function renard_scripts() {
 
 	wp_enqueue_script( 'slider-pro', $base . '/js/jquery.sliderpro.min.js', array( 'jquery' ), '1.2.4', true );
 	wp_enqueue_script( 'magnific-popup', $base . '/js/magnific-popup.js', array( 'jquery' ), '1.0.0', true );
+	wp_enqueue_script( 'scrollFix', $base . '/js/scrollFix.js', array( 'jquery' ), '1.2.4', true );
+	wp_enqueue_script( 'toggleSearch', $base . '/js/toggleSearch.js', array( 'jquery' ), '1.2.4', true );
 	wp_enqueue_script( 'renard-scripts', $base . '/js/script.js', array( 'jquery', 'hoverIntent' ), '1.0.0', true );
 	wp_enqueue_script( 'renard-skip-link-focus-fix', $base . '/js/skip-link-focus-fix.js', array(), '1.0.0', true );
 

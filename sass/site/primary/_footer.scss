@@ -15,7 +15,7 @@
 	padding: 0 0 5px;
 	&-link {
 		display: inline-block;
-		font-family: 'Yesteryear', cursive;
+		font-family: $font__header;
 		@include font-size(2.25);
 	}
 }

@@ -5,6 +5,7 @@
 	margin: 0 auto;
 	-moz-box-sizing: content-box;
 	box-sizing: content-box;
+	z-index: 0;
 }
 
 .sp-slides-container {
@@ -632,6 +633,7 @@
 	&-excerpt {
 		margin: 0 0 15px;
 		font-weight: 300;
+		display: none !important;
 		@media ( max-width: 969px ) {
 			margin: 0;
 		}
